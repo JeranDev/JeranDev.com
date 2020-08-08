@@ -246,7 +246,7 @@ a:active {
 }
 .site-hero,
 .site-hero .row {
-  height: 100vh;
+  height: 50vh;
   min-height: 800px;
 }
 .site-hero:before {
@@ -862,12 +862,16 @@ a:active {
   }
 
   .site-hero {
-    display: none;
+    min-height: 600px;
   }
 }
 
 @media screen and (max-width: 540px) {
   #sub-heading {
     display: none;
+  }
+
+  .site-hero {
+    min-height: 400px;
   }
 }
