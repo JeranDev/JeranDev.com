@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #fff;
   color: rgba(255, 255, 255, 0.4);
@@ -66,7 +70,7 @@ a:active {
   text-decoration: none;
 }
 
-#main-nav {
+.topnav {
   position: fixed;
   top: 0;
   width: 100%;
@@ -74,6 +78,11 @@ a:active {
   z-index: 9999;
   padding: 0.5em;
   padding-bottom: 1em;
+  overflow: hidden;
+}
+
+.topnav .icon {
+  display: none;
 }
 
 .navbar-nav ul {
@@ -81,7 +90,7 @@ a:active {
 }
 
 .navbar-nav li {
-  display: inline;
+  list-style: none;
   margin: 0 0.2em;
   float: right;
 }
@@ -835,7 +844,6 @@ a:active {
 
 .site-heading,
 .site-subheading {
-  display: inline;
   float: left;
 }
 
@@ -846,4 +854,20 @@ a:active {
 
 .site-subheading {
   margin-top: 1.2em;
+}
+
+@media screen and (max-width: 1165px) {
+  .topnav li {
+    display: none;
+  }
+
+  .site-hero {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  #sub-heading {
+    display: none;
+  }
 }
