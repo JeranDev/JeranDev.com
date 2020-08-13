@@ -64,6 +64,13 @@ body {
   color: #fff;
 }
 
+.btn.btn-primary.send-message-btn {
+  background: red;
+  padding: 0.7rem;
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
 .call-to-action small {
   display: block;
   margin-top: 2rem;
@@ -441,6 +448,7 @@ a:active {
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
   background: #b2c251;
+  color: #333;
 }
 
 .progress {
