@@ -40,6 +40,36 @@ body {
   color: #fff;
 }
 
+.call-to-action {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16rem;
+  margin-left: 1rem;
+  width: 50%;
+  color: #fff;
+}
+
+.call-to-action p {
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+}
+
+.call-to-action a {
+  width: 6rem;
+  border: solid #333 1px;
+  background: red;
+  padding: 1.5rem;
+  color: #fff;
+}
+
+.call-to-action small {
+  display: block;
+  margin-top: 2rem;
+  font-size: 70%;
+}
+
 h1,
 h2,
 h3,
@@ -257,22 +287,23 @@ a:active {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 .site-hero h1 {
   font-weight: 200;
-  margin-bottom: 20px;
+  margin-bottom: 2.5px;
   display: block;
+  color: #bac964;
 }
 .site-hero h1 strong {
   font-weight: 800;
 }
 @media (min-width: 768px) {
   .site-hero h1 {
-    font-size: 70px;
+    font-size: 6rem;
   }
 }
-.site-hero h1,
+
 .site-hero .lead {
   font-weight: 200;
   color: #fff;
@@ -864,14 +895,30 @@ a:active {
   .site-hero {
     min-height: 600px;
   }
+
+  .call-to-action {
+    margin: 6rem auto;
+  }
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 560px) {
   #sub-heading {
     display: none;
   }
 
   .site-hero {
     min-height: 400px;
+  }
+
+  .call-to-action {
+    margin: 3rem auto 0 auto;
+  }
+
+  .call-to-action h1 {
+    visibility: hidden;
+  }
+
+  .call-to-action p {
+    font-size: 1.3rem;
   }
 }
