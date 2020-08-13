@@ -764,7 +764,8 @@ a:active {
 }
 .form-control:active,
 .form-control:focus {
-  background: #404040;
+  background: #444;
+  color: #fff;
 }
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
