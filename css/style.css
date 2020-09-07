@@ -460,9 +460,6 @@ a:hover {
 .site-subheading {
   margin-top: 1.2em;
 }
-
-/* 404 Page */
-
 .align-content-center {
   text-align: center;
   margin: 5rem 0;
@@ -531,6 +528,15 @@ a:hover {
   }
   .call-to-action p {
     font-size: 1.3rem;
+  }
+  .cta-paragraph {
+    line-height: 1.4;
+  }
+  .call-to-action a {
+    padding: 1rem 0.6rem;
+  }
+  .call-to-action small {
+    display: none;
   }
 }
 @media (max-width: 992px) and (min-width: 768px) {
