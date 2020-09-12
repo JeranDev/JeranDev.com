@@ -11,8 +11,13 @@ if (isset($_POST['submit'])) {
     $mailTo = 'jerandev@outlook.com';
     $headers = "From: forms@jerandev.com \r\n";
     $txt = "You have received an e-mail from $name. \n\n$email_body";
+    
 
-    mail($mailTo, $email_subject, $txt, $headers);
-    header("Location: index.html");
+    if ($email_body != null && $email_body != undefined) {
+        mail($mailTo, $email_subject, $txt, $headers);
+        header("location: success.html");
+    } else {
+        header("location: failure.html");
+    }
 }
 ?>
